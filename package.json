@@ -1,6 +1,6 @@
 {
   "name": "fizza-ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "author": {
     "name": "fizza code",
@@ -12,7 +12,7 @@
     "build-library": "vue-cli-service build --target lib --name fizza-ui ./src/install.js",
     "lint": "vue-cli-service lint"
   },
-  "main": "./dist/myPlugin.common.js",
+  "main": "./dist/fizza-ui.common.js",
   "files": [
     "dist/*"
   ],
