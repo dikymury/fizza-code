@@ -1,0 +1,159 @@
+// custom scroll
+.scrollY {
+  &::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background: #eeeeee;        /* color of the tracking area */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #b7b7b7;   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #eeeeee;
+  }
+}
+
+.scrollX {
+  &::-webkit-scrollbar {
+    height: 14px;               /* width of the entire scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: #eeeeee;        /* color of the tracking area */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #b7b7b7;   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #eeeeee;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+// custom transition vue
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.expand-enter-active,
+.expand-leave-active {
+    transition: all 0.5s ease-in-out;
+    max-height: 1000px;
+}
+
+.expand-enter-from, .expand-leave-to {
+  max-height: 0px;
+}
+
+
+// V CALENDAR
+.vc-yellow {
+  --vc-accent-50: #fe7f0032 !important;
+  --vc-accent-100: #fe7f0056 !important;
+  --vc-accent-200: #f8982379 !important;
+  --vc-accent-300: #f898239d !important;
+  --vc-accent-400: #f89823c1 !important;
+  --vc-accent-500: #f89823da !important;
+  --vc-accent-600: #f89823 !important;
+  --vc-accent-700: #F89723 !important;
+  --vc-accent-800: #F89723 !important;
+  --vc-accent-900: #F89723 !important;
+}
+// END V CALENDAR
+
+// table
+// table action for sticky action in the table
+.table-action th:last-child {
+  position: sticky;
+  right: 0;
+}
+.table-action td:last-child {
+  position: sticky;
+  right: 0;
+}
+.table-selected th:first-child {
+  position: sticky;
+  left: 0;
+}
+.table-selected td:first-child {
+  position: sticky;
+  left: 0;
+}
+// end table
+
+// style custom v-calendar
+.vc-time-picker.vc-attached {
+  border-color: #F3F3F3 !important;
+}
+.vc-time-select-group .vc-base-icon {
+  color: #64748b !important;
+}
+.vc-time-weekday, .vc-time-month, .vc-time-day, .vc-time-year {
+  color: #000 !important;
+}
+// end style custom v-calendar
+/* This will only affect the top-right container toast */
+.Vue-Toastification__container.top-right{
+  top: 3em !important;
+}
+.Vue-Toastification__toast--success{
+background-color: #4ACEA1 !important;
+}
+.Vue-Toastification__toast--warning{
+background-color: #EDAE45 !important;
+}
+.Vue-Toastification__toast--info{
+background-color: #5F9DC6 !important;
+}
+.Vue-Toastification__toast--error{
+background-color: #B63F34 !important;
+}
+/* end toast */
+
+// gradient
+.text-gradient{
+  background: linear-gradient(45deg, #EC4137 6.37%, #F69525 93.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+// end gradient
+
+// gradient svg
+.svg-start {
+  stop-color: #EC4137;
+}
+.svg-stop {
+  stop-color: #F69525;
+}
+//end gradient svg
+
+// nProgress
+#nprogress .bar {
+  background: #F69525 !important;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px #FFBB00, 0 0 5px #FFBB00 !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #FFBB00 !important;
+  border-left-color: #FFBB00 !important;
+}
+// end nProgress
