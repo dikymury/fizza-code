@@ -42,6 +42,9 @@
 
 <script setup>
 import IconSVG from "./icons/IconSvg.vue";
+defineOptions({
+  name: "SwitchView",
+});
 const props = defineProps({
   label: {
     type: String,
