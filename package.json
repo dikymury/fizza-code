@@ -12,7 +12,7 @@
     "build-library": "vue-cli-service build --target lib --name fizza-ui ./src/install.js",
     "lint": "vue-cli-service lint"
   },
-  "main": ".dist/fizza-ui.common.js",
+  "main": "./dist/fizza-ui.common.js",
   "files": [
     "dist"
   ],
